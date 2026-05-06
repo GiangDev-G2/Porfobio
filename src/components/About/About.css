@@ -17,19 +17,12 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.image-placeholder {
+.profile-img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  background: linear-gradient(135deg, var(--border-color), var(--secondary-bg));
+  object-fit: cover;
   border-radius: var(--border-radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.placeholder-icon {
-  color: var(--text-muted);
-  opacity: 0.5;
+  display: block;
 }
 
 .about-text-column {
@@ -86,7 +79,7 @@
   .about-content {
     flex-direction: column;
   }
-  
+
   .about-image-column {
     width: 100%;
     max-width: 500px;

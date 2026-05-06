@@ -1,50 +1,74 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
-import './Projects.css';
+import React from "react";
+import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
+import { useLanguage } from "../../context/LanguageContext";
+import "./Projects.css";
 
 const Projects = () => {
+  const { t } = useLanguage();
+
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with advanced search, cart management, and secure payment processing. Built for high performance and scalability.',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: '#',
-      demo: '#',
+      title: t("project1_title"),
+      description: t("project1_desc"),
+      tags: ["React", ".Net", "SQL Server", "REST API"],
+      github: "#",
+      demo: "#",
     },
     {
-      title: 'Business Management System',
-      description: 'An enterprise-level dashboard for managing customers, products, and sales reports with real-time data visualization.',
-      tags: ['C#', '.NET Core', 'SQL Server', 'React'],
-      github: '#',
-      demo: '#',
+      title: t("project2_title"),
+      description: t("project2_desc"),
+      tags: ["C#", ".NET Core", "SQL Server"],
+      github: "#",
+      demo: "#",
     },
     {
-      title: 'AI Support Helpdesk',
-      description: 'A hybrid RAG Helpdesk integrating Llama 3 for intelligent intent classification and automated response generation.',
-      tags: ['Python', 'FastAPI', 'React', 'LLMs'],
-      github: '#',
-      demo: '#',
-    }
+      title: t("project3_title"),
+      description: t("project3_desc"),
+      tags: ["Java Script", "SupaBase", "Node.js", "JWT"],
+      github: "#",
+      demo: "#",
+    },
+    {
+      title: t("project4_title"),
+      description: t("project4_desc"),
+      tags: ["React", ".Net", "Tailwind", "SQL Server"],
+      github: "#",
+      demo: "#",
+    },
+    {
+      title: t("project5_title"),
+      description: t("project5_desc"),
+      tags: ["Python", ".NET", "React", "SQL Server"],
+      github: "#",
+      demo: "#",
+    },
+    {
+      title: t("project6_title"),
+      description: t("project6_desc"),
+      tags: ["React", "Node.js", "SQL Server", "REST API"],
+      github: "#",
+      demo: "#",
+    },
   ];
 
   return (
     <section className="section bg-alt" id="projects">
       <div className="container">
-        <motion.h2 
+        <motion.h2
           className="section-title"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Featured Projects
+          {t("projects_title")}
         </motion.h2>
 
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <motion.div 
+            <motion.div
               className="card project-card"
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -57,16 +81,26 @@ const Projects = () => {
                 <p className="project-desc">{project.description}</p>
                 <div className="project-tags">
                   {project.tags.map((tag, i) => (
-                    <span key={i} className="tag">{tag}</span>
+                    <span key={i} className="tag">
+                      {tag}
+                    </span>
                   ))}
                 </div>
               </div>
               <div className="project-links">
-                <a href={project.github} className="project-link" aria-label="GitHub Repository">
-                  <FaGithub size={20} /> Code
+                <a
+                  href={project.github}
+                  className="project-link"
+                  aria-label="GitHub Repository"
+                >
+                  <FaGithub size={20} /> {t("projects_code")}
                 </a>
-                <a href={project.demo} className="project-link primary" aria-label="Live Demo">
-                  <ExternalLink size={20} /> Live Demo
+                <a
+                  href={project.demo}
+                  className="project-link primary"
+                  aria-label="Live Demo"
+                >
+                  <ExternalLink size={20} /> {t("projects_demo")}
                 </a>
               </div>
             </motion.div>
