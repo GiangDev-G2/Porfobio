@@ -1,0 +1,131 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px; /* Offset for fixed header */
+  background: radial-gradient(circle at top right, var(--secondary-bg) 0%, var(--bg-color) 60%);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-shape {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, var(--primary-color), #8b5cf6);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  animation: morph 8s ease-in-out infinite;
+}
+
+.shape-inner {
+  width: 90%;
+  height: 90%;
+  background-color: var(--secondary-bg);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shape-text {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  font-family: monospace;
+}
+
+@keyframes morph {
+  0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+  50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+  100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-shape {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-primary, .btn-outline {
+    width: 100%;
+  }
+}
