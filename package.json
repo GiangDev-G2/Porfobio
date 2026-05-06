@@ -1,14 +1,16 @@
 {
-  "homepage": "https://<GiangDev-G2>.github.io/Porfobio",
+  "homepage": "https://GiangDev-G2.github.io/Porfobio",
   "name": "porfobio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",
