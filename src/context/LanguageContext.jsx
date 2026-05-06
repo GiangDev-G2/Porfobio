@@ -127,24 +127,24 @@ export const LanguageProvider = ({ children }) => {
 
       // Hero
       hero_greeting: "Hello, I'm",
-      hero_name: "A Passionate Developer",
-      hero_title: "Building Digital Experiences",
+      hero_name: "Truong Giang",
+      hero_title: "A Software Engineer",
       hero_desc:
-        "I specialize in crafting high-quality, modern web applications that are fast, accessible, and user-centric. Let's build something amazing together.",
-      hero_btn_work: "View Work",
+        "I specialize in designing and developing modern software systems that are performance-optimized and highly scalable. From robust backend architectures to user-centric interfaces. Let's collaborate to bring your vision to life.",
+      hero_btn_work: "View Projects",
       hero_btn_contact: "Contact Me",
 
       // About
       about_title: "About Me",
       about_subtitle: "Who am I?",
       about_p1:
-        "I am a dedicated software developer with a strong focus on building highly performant, scalable, and visually appealing web applications. With a solid foundation in modern JavaScript frameworks and backend architectures, I strive to create seamless user experiences.",
+        "Hello, I am Kien Nguyen Truong Giang - a Software Engineer with a passion for building sustainable system architectures and developing AI-integrated applications. Based on a deep foundation in Full-stack programming and the .NET (C#) ecosystem, my goal is to transform complex technical challenges into optimal technology solutions that operate smoothly and bring practical value to businesses.",
       about_p2:
-        "My journey in tech is driven by curiosity and continuous learning. When I'm not coding, you can find me exploring new technologies, contributing to open-source, or refining my UI/UX design skills.",
+        "I always maintain my curiosity and passion for exploring new things. When I step away from the code screen, I spend time exploring new knowledge, participating in open-source communities, or refining my UI/UX skills so that the products I create not only run well but also have Production-ready interfaces.",
       about_loc: "Location",
       about_loc_val: "Vietnam",
       about_exp: "Experience",
-      about_exp_val: "1+ Years",
+      about_exp_val: "1+ Year",
       about_edu: "Education",
       about_edu_val: "Software Engineering",
       about_cert: "Certificate",
@@ -157,34 +157,35 @@ export const LanguageProvider = ({ children }) => {
       skills_cat2: "Backend Development",
       skills_cat3: "Tools & Ecosystem",
       skills_cat4: "Other Skills",
-      skill_responsive: "Responsive Design",
-      skill_agile: "Agile Methodology",
+      skill_responsive: "Effective Teamwork",
+      skill_agile: "System Design Thinking",
       skill_problem: "Problem Solving",
-      skill_uiux: "UI/UX Principles",
+      skill_uiux: "UI/UX Design",
       skill_clean: "Clean Code",
       skill_perf: "Performance Optimization",
 
       // Projects
       projects_title: "Featured Projects",
-      projects_code: "Code",
+      projects_code: "Source Code",
       projects_demo: "Live Demo",
-      project1_title: "E-Commerce Platform",
+      project1_title: "Digital Classroom Management System - Digital Class",
       project1_desc:
-        "A full-stack e-commerce solution with advanced search, cart management, and secure payment processing. Built for high performance and scalability.",
-      project2_title: "Business Management System",
+        "A full-stack digital transformation solution in higher education with features for classroom management, online learning, assessment, and student management.",
+      project2_title: "Digital Library Management System - Digital Library",
       project2_desc:
-        "An enterprise-level dashboard for managing customers, products, and sales reports with real-time data visualization.",
+        "A digital library management solution with features for book management, loan/return tracking, and member management.",
+      project3_title: "Human Resource Management System - HRM",
       project3_desc:
         "Human resource management system with employee management, payroll, and attendance tracking features.",
-      project4_title: "E-Commerce Platform - E-Shop",
+      project4_title: "Business Management System - BMS",
       project4_desc:
-        "A full-stack e-commerce solution with advanced search, cart management, and online payment processing.",
-      project5_title: "Sales Management System - POS",
+        "A full-stack enterprise management solution with features for customer management, product management, order management, and revenue reporting.",
+      project5_title: "Technical Support Application - IT HelpDesk",
       project5_desc:
-        "Point-of-sale system with real-time sales reports and inventory management.",
-      project6_title: "Intelligent AI Assistant",
+        "An AI-powered technical support system that helps answer technical questions and assists users in solving technical issues.",
+      project6_title: "Buffet Restaurant Operations Management System",
       project6_desc:
-        "Smart chatbot system for customer support integrated with Large Language Models (LLM).",
+        "A buffet restaurant management system with features for dish management, customer management, order management, and revenue reporting integrated with POS-Order-BMS.",
 
       // Hobbies
       hobbies_title: "My Hobbies",
@@ -195,11 +196,11 @@ export const LanguageProvider = ({ children }) => {
       hobby_reading: "Reading",
 
       // Contact
-      contact_title: "Get In Touch",
-      contact_subtitle: "Let's talk about everything!",
+      contact_title: "Contact",
+      contact_subtitle: "Ready for the next project?",
       contact_desc:
-        "Feel free to reach out for collaborations, freelance projects, or just to say hi. I am currently open to new opportunities.",
-      contact_loc_val: "Ho Chi Minh City, Vietnam",
+        "Don't hesitate to reach out for collaborations, freelance projects, or just to say hi. I am always open to new opportunities.",
+      contact_loc_val: "Can Tho, Vietnam",
       contact_form_name: "Name",
       contact_form_name_ph: "Your Name",
       contact_form_email: "Email",
@@ -214,7 +215,7 @@ export const LanguageProvider = ({ children }) => {
 
       // Footer
       footer_desc: "Building digital experiences with modern technologies.",
-      footer_copy: "Developer Portfolio. All rights reserved.",
+      footer_copy: "This Portfolio. All rights reserved.",
     },
   };
 
